@@ -104,7 +104,7 @@ img {
   max-width: 1200px;
   margin: 0 auto;
   padding: 65px 16px;
-  
+  flex-wrap: wrap;
 }
 
 .post {
