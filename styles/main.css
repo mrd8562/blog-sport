@@ -1,0 +1,421 @@
+/* font-family: 'Open Sans', sans-serif; */
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Open Sans', sans-serif;
+  font-weight: 400;
+  font-size: 13px;
+}
+
+ul {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+img {
+  display: block;
+  max-width: 100%;
+}
+
+.header {
+  background: rgba(0, 0, 0, 0.600) url(../images/banner-bg.jpg) no-repeat center;
+  background-size: cover;
+  padding: 28px 0 146px;
+  position: relative;
+}
+
+.header::after{
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: black;
+  opacity: 0.5;
+  z-index: 1;
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 16px;
+
+  position: relative;
+  z-index: 2;
+}
+
+.header-top {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.logo {
+  width: 180px;
+  height: 40px;
+}
+
+.menu {
+  display: flex;
+  justify-content: center;
+}
+
+.menu-list + .menu-list {
+  margin-left: 35px;
+}
+
+.menu-link {
+  color: #fff;
+  text-transform: uppercase;
+}
+
+.menu-link:hover {
+  text-decoration: underline;
+}
+
+.header-bottom {
+  margin: 145px auto 0px;
+  width: 686px;
+
+}
+
+.header-bottom-title {
+  font-size: 45px;
+  font-weight: bold;
+  line-height: 75px;
+  text-align: center;
+  color: #fff;
+  text-transform: uppercase;  
+}
+
+/* Посты */
+.main-content {
+  display: flex;
+  justify-content: space-between;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 65px 16px;
+  
+}
+
+.post {
+  display: flex;
+  justify-content: space-between;
+  width: 780px;
+}
+
+.post + .post {
+  margin-top: 60px;
+}
+
+.right-post {
+  width: 367px;
+}
+
+.tags {
+  display: flex;
+}
+
+.image {
+  width: 380px;
+}
+
+.tags-list {
+  font-size: 14px;
+  font-weight: bold;
+  text-transform: uppercase;
+  color: #b59f5b; 
+}
+
+.tags-list + .tags-list {
+  margin-left: 20px;
+}
+
+.tags-list:hover {
+  text-decoration: underline;
+}
+
+.title-post {
+  margin-top: 10px;
+}
+
+.title-post-title-text {
+  font-size: 20px;
+  font-weight: bold;
+  text-transform: uppercase;
+  line-height: 24px;
+  color: #000;
+}
+
+.title-post-title-text:hover {
+  color: #b59f5b;
+}
+
+.date-author-post {
+  margin: 30px 0px 45px;
+}
+
+.date-time {
+  font-weight: 400;
+  font-size: 12px;
+  color: #888888;
+}
+
+.author-link {
+  margin-left: 14px;
+  font-weight: bold;
+  font-size: 12px;
+  color: #000;
+}
+
+.desc-post-text {
+  font-size: 15px;
+  font-weight: 400;
+  line-height: 22px;
+  color: #000;
+}
+
+.desc-post-text + .desc-post-text {
+  margin-top: 20px;
+}
+
+/* Правый блок */
+.side-bar {
+  width: 280px;
+}
+
+.item-side-bar + .item-side-bar {
+  margin-top: 60px;
+}
+
+.side-bar-title-text {
+  font-size: 14px;
+  font-weight: bold;
+  text-transform: uppercase;
+  text-align: center;
+  color: #000;
+}
+
+.side-bar-title-text::after {
+  content: "";
+  width: 66px;
+  height: 3px;
+  background-color: #b59f5b;
+  opacity: 0.4;
+  display: block;
+  margin: 14px auto 30px;
+}
+
+.side-bar-item {
+  display: flex;
+  justify-content: space-between;
+}
+
+.side-bar-item + .side-bar-item {
+  margin-top: 20px;
+}
+
+.image-item {
+  width: 70px;
+}
+
+.item-title-text {
+  font-size: 14px;
+  font-weight: bold;
+  line-height: 18px;
+  text-transform: uppercase;
+  color: #000;
+}
+
+.item-title-text:hover {
+  color: #b59f5b;
+}
+
+.side-bar-text {
+  width: 181px;
+}
+
+.search-form {
+  display: flex;
+}
+
+.search-form-label {
+  width: 100%;
+  display: block;
+  position: relative;
+}
+
+.form-hint {
+  width: 1px;
+  height: 1px;
+  clip: rect(1px, 1px, 1px, 1px);
+  position: absolute;
+}
+
+.side-bar-input {
+  width: 100%;
+  height: 50px;
+  padding: 0 20px;
+  border: none;
+  background-color: #f4f7f6;
+}
+
+.side-bar-btn {
+  color: #ffffff;
+  background-color: #b59f5b;
+  border: none;
+  height: 50px;
+}
+
+.side-bar-btn:hover {
+  background-color: #323232;
+}
+
+.btn-hint {
+  width: 1px;
+  height: 1px;
+  clip: rect(1px, 1px, 1px, 1px);
+  position: absolute;
+}
+
+.search-input {
+  height: 48px;
+  margin-top: 1px;
+}
+
+.search-btn {
+  background-image: url(https://netology-code.github.io/html-2-diploma/sources/images/search.svg);
+  background-size: 20px 20px;
+  background-repeat: no-repeat;
+  background-position: center;
+  width: 50px;
+  height: 50px;
+  flex: none;
+}
+
+.side-bar-input:focus {
+  outline: 1px solid #b59f5b
+}
+
+.mail-input {
+  width: 278px;
+  margin-left: 1px;
+}
+
+.subs-btn {
+  width: 100%;
+  font-weight: bold;
+  font-size: 14px;
+  text-transform: uppercase;
+  margin-top: 16px;
+}
+
+.tag-list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 6px;
+}
+
+.tag-list-item {
+  border: 3px solid #eee;
+  padding: 6px 12px;
+}
+
+.tag-list-item:hover {
+  border-color: #b59f5b;
+}
+
+.tag-link {
+  font-size: 12px;
+  font-weight: bold;
+  color: #000;
+  text-transform: uppercase;
+}
+
+.topic-link {
+  font-size: 14px;
+  font-weight: bold;
+  color: #000;
+}
+
+.topic-link:hover {
+  color: #b59f5b;
+}
+
+.topic-count {
+  font-size: 12px;
+  font-weight: bold;
+  color: #b59f5b;
+  vertical-align: super;
+}
+
+.topic-list-item {
+  padding-bottom: 12px;
+  border-bottom: 1px solid #eeeeee;
+}
+
+.topic-list-item + .topic-list-item {
+  margin-top: 12px;
+}
+
+.footer > .container {
+  background-color: #f4f7f6;
+  text-align: center;
+}
+
+.social-link-list {
+  display: flex;
+  justify-content: center;
+  column-gap: 30px;
+}
+
+.visually-hidden {
+  width: 1px;
+  height: 1px;
+  clip: rect(1px, 1px, 1px, 1px);
+  position: absolute;
+}
+
+.social-link-icon{
+  display: block;
+  background-repeat: no-repeat;
+  background-position: center;
+  width: 25px;
+  height: 25px;
+}
+
+.social-link {
+  padding: 30px 0px
+}
+
+.dribbble {
+  background-image: url(../images/social/001-dribbble.svg);
+}
+
+.pinterest {
+  background-image: url(../images/social/002-pinterest.svg);
+}
+
+.tumblr {
+  background-image: url(../images/social/003-tumblr.svg);  
+}
+
+.copyright {
+  margin: 75px 0px 40px ;
+  text-align: center;
+}
+
+.copyright-link {
+  font-size: 12px;
+  font-weight: bold;
+  color: #999999;
+}
