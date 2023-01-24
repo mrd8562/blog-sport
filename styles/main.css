@@ -503,3 +503,15 @@ img {
     background: #fff
   }
 }
+  @media (max-width: 370px) {
+    .header-bottom-title {
+      font-size: 25px;
+      line-height: 35px;
+    }
+    .image {
+      width: 310px;
+    }
+    .right-post {
+      width: auto;
+    }
+  }
